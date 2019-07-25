@@ -7,7 +7,7 @@ public class HelloWorldControllerTest {
     @Test
     public void should_get_hello_world_when_getHelloWorld() {
         // GIVEN
-        HelloWorldController helloWorldController = new HelloWorldController();
+        StationController helloWorldController = new StationController();
 
         // WHEN
         String helloWorld = helloWorldController.getHelloWorld();
