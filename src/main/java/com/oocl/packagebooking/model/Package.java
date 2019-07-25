@@ -19,6 +19,10 @@ public class Package {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date getTime;
 
+    public Package() {
+        this.status="未预约";
+    }
+
     public Long getOrderNumber() {
         return orderNumber;
     }

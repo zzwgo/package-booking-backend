@@ -28,6 +28,7 @@ public class PackageServiceImpl implements PackageService {
     public Package updatePackage(Long id, Package patchPackage) {
         Package currentPackage=packageRepository.findById(id).orElse(null);
         currentPackage.setStatus(patchPackage.getStatus());
+        packageRepository.save(currentPackage);
         return currentPackage;
     }
 }
