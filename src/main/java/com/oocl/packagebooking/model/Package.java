@@ -18,10 +18,19 @@ public class Package {
     private String status;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date getTime;
-
+    private String weight;
     public Package() {
         this.status="未预约";
     }
+
+    public String getWeight() {
+        return weight;
+    }
+
+    public void setWeight(String weight) {
+        this.weight = weight;
+    }
+
 
     public Long getOrderNumber() {
         return orderNumber;
